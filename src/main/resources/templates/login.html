@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+        <link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css}">
+        <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css}">
+        <link rel="stylesheet" th:href="@{/css/styles.css}">
+        <title>Login</title>
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-dark navbar-expand-md fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- <a href="#" class="navbar-brand mr-auto"><img src="img/logo.png" class="mr-3" height="30" width="41"></a> -->
+                <img src="images/ylogo.png" width = "50px" height = "70px"   class="navbar-brand mr-auto">
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a th:href="@{/home}" class="nav-link"><i class="fa fa-home fa-lg"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a th:href="@{/aboutus}" class="nav-link"><span class="fa fa-info fa-lg"></span> About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a th:href="@{/contactus}" class="nav-link"><span class="fa fa-address-card fa-lg"></span> Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a th:href="@{#}" class="nav-link"><span class="fa fa-comments-o fa-lg"></span> Feedback</a>
+                        </li>
+
+                    </ul>
+                    <span class="navbar-text">
+
+                <a th:href="@{/login}">
+                    <span class="fa fa-sign-in"></span> Login
+                </a>
+            </span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container" style="margin-top: 10%;">
+            <div class="row">
+                <div class="col-sm-4">
+
+                </div>
+                <div class="col-sm-4">
+                    <form th:action="@{/login}" method="POST" class="form-signin">
+                        <div class="panel">
+                        <h2 class="form-signin-heading" th:text="Welcome"></h2>
+                        </div>
+                        <br/>
+
+                        <input type="text" id="email" name="email"  th:placeholder="Email"
+                               class="form-control" /> <br/>
+                        <input type="password"  th:placeholder="Password"
+                               id="password" name="password" class="form-control" /> <br />
+
+                        <!--/*@thymesVar id="error" type=""*/-->
+                        <!--/*@thymesVar id="param" type=""*/-->
+                        <div align="center" th:if="${param.error}">
+                            <p style="font-size: 20; color: #FF1C19;">Email or Password invalid, please verify</p>
+                        </div>
+                        <button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="Submit" th:text="Login"></button>
+                    </form>
+                </div>
+                <div class="col-sm-4">
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

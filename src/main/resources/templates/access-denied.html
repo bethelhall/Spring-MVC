@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css}">
+    <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css}">
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <title>Home</title>
+
+</head>
+<body>
+<nav class="navbar navbar-dark navbar-expand-md fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <a href="#" class="navbar-brand mr-auto"><img src="img/logo.png" class="mr-3" height="30" width="41"></a> -->
+        <img src="../images/ylogo.png" width = "50px" height = "70px"   class="navbar-brand mr-auto">
+        <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a th:href="@{#}" class="nav-link"><i class="fa fa-home fa-lg"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a th:href="@{#}" class="nav-link"><span class="fa fa-info fa-lg"></span> About</a>
+                </li>
+                <li class="nav-item">
+                    <a th:href="@{#}" class="nav-link"><span class="fa fa-address-card fa-lg"></span> Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a th:href="@{#}" class="nav-link"><span class="fa fa-comments-o fa-lg"></span> Feedback</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<header class="jumbotron" style="height: 30px;">
+    <div class="container">
+        <div class="row row-header">
+            <div class="col-12">
+                <h1 style="text-align: center;">Yekatit Medical Care</h1>
+
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+        <div class="card" style="margin-top: 10px; margin-bottom: 10px;">
+            <div class="card-header">
+                <h1> Access denied</h1>
+            </div>
+                <div class="card-body">
+                    <img th:src="@{../images/acessdenied.jpg}" style="margin-top: 4px; margin-left: 15px;">
+
+                    <h1>Error 401 Unauthorized!</h1>
+
+                </div>
+
+        </div>
+        </div>
+
+
+    </div>
+</div>
+<!---->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 offset-1 col-sm-2">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a th:href="@{#}">Home</a></li>
+                    <li><a th:href="@{#}">About</a></li>
+                    <li><a th:href="@{#}">Contact</a></li>
+                    <li><a th:href="@{#}">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="col-7 col-sm-5">
+                <h5>Our Address</h5>
+                <address class="address">
+                    St George's Square<br>
+                    6 Kilo, Addis Ababa<br>
+                    Ethiopia<br>
+                    <i class="fa fa-phone fa-lg"></i>: +251910765922<br>
+                    <i class="fa fa-fax fa-lg"></i>: +25125310203<br>
+                    <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:contact@yekatit.net">contact@yekatit.net</a>
+                </address>
+            </div>
+            <div class="col-12 col-sm-4 align-self-center">
+                <div class="text-center">
+                    <a class="btn btn-social-icon btn-google" th:href="@{http://google.com/+}"><i class="fa fa-google-plus fg-lg"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" th:href="@{http://www.facebook.com/profile.php?id=}"><i class="fa fa-facebook fg-lg"></i></a>
+                    <a class="btn btn-social-icon btn-linkedin" th:href="@{http://www.linkedin.com/in/}"><i class="fa fa-linkedin fg-lg"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" th:href="@{http://twitter.com/}"><i class="fa fa-twitter fg-lg"></i></a>
+                    <a class="btn btn-social-icon btn-google" th:href="@{http://youtube.com/}"><i class="fa fa-youtube fg-lg"></i></a>
+                    <a class="btn btn-social-icon" th:href="@{mailto:}"><i class="fa fa-envelope-o fg-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <p>Copyright © 2018 Yekatit Referral Hospital</p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script th:src="@{/js/jquery.slim.min.js}"></script>
+<script th:src="@{/js/popper.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/scripts.js}"></script>
+
+</body>
+</html>

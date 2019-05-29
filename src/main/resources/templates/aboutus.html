@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css}">
+    <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css}">
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <title>Home</title>
+
+</head>
+<body>
+<nav class="navbar navbar-dark navbar-expand-md fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <a href="#" class="navbar-brand mr-auto"><img src="img/logo.png" class="mr-3" height="30" width="41"></a> -->
+        <img src="images/ylogo.png" width = "50px" height = "70px"   class="navbar-brand mr-auto">
+        <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a th:href="@{/}" class="nav-link"><i class="fa fa-home fa-lg"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a th:href="@{#}" class="nav-link"><span class="fa fa-info fa-lg"></span> About</a>
+                </li>
+                <li class="nav-item">
+                    <a th:href="@{/contactus}" class="nav-link"><span class="fa fa-address-card fa-lg"></span> Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a th:href="@{#}" class="nav-link"><span class="fa fa-comments-o fa-lg"></span> Feedback</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<header class="jumbotron">
+    <div class="container">
+        <div class="row row-header">
+            <div class="col-12">
+                <h1 style="text-align: center;">Yekatit Medical Care</h1>
+                <p><div class="50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusamus quia fuga nulla. Ratione illo, omnis natus architecto voluptate sequi harum possimus quas itaque quisquam nostrum exercitationem soluta accusamus animi?</div></p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <ol class="col-12 breadcrumb">
+            <li class="breadcrumb-item"><a th:href="@{/home.html}">Home</a></li>
+            <li class="bredcrumb-item active">About Us</li>
+        </ol>
+        <div class="col-12">
+            <h3>About Us</h3>
+            <hr>
+        </div>
+    </div>
+    <div class="row row-content">
+        <div class="col-12 col-sm-6">
+            <h2>Our History</h2>
+
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusamus quia fuga nulla. Ratione illo, omnis natus architecto voluptate sequi harum possimus quas itaque quisquam nostrum exercitationem soluta accusamus animi?</p>
+
+        </div>
+
+    </div>
+    <div class="row row-content align-items-center">
+        <div class="col-12 col-sm-4 col-md-3">
+            <h3 style="margin-left: 70px">Our Vision</h3>
+        </div>
+        <div class="col col-sm col-md">
+            <div class="media">
+                <div class="media-body">
+                    <!--<h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>-->
+                    <p class="d-none d-sm-block">We will transform the health care experience through a culture of caring, quality, safety, service, innovation and excellence, and be recognized by employees, physicians, patients and families, volunteers and the community as The best place to work The best place to practice medicine, and The best place to receive care
+                        At Sharp, our leadership team brings a wealth of health care administration experience and a commitment to the San Diego community. Our leaders are the driving force behind The Sharp Experience to ensure we are the best place to work, practice medicine and receive care.ight thing every day to improve the health of those we serve. We will become the best health system in the universe.</p>
+                </div>
+                <img class="d-flex ml-3 img-thumbnail align-self-center"th:src="@{/images/yekatit.png}">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row row-content align-items-center">
+        <div class="col-12 col-sm-4 col-md-3">
+            <h3 style="margin-left: 70px">Our Mission</h3>
+        </div>
+        <div class="col col-sm col-md">
+            <div class="media">
+                <div class="media-body">
+                    <!--<h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>-->
+                    <p class="d-none d-sm-block">At Yekatit 12 HealthCare, our mission is to improve the health of those we serve with a commitment to excellence in all that we do. Our goal is to offer quality care and services that set community standards, exceed patients' expectations and are provided in a caring, convenient, cost-effective and accessible manner. </p>
+                </div>
+                <img class="d-flex ml-3 img-thumbnail align-self-center"th:src="@{/images/yekatit2.png}">
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-content align-items-center">
+        <div class="col-12 col-sm-4 col-md-3">
+            <h3 style="margin-left: 70px;">Our Values</h3>
+        </div>
+        <div class="col col-sm col-md">
+            <div class="media">
+                <div class="media-body">
+                    <p class="d-none d-sm-block">At Yekatit 12, our core values are integrity, caring, safety, innovation and excellence.At Sharp, our leadership team brings a wealth of health care administration experience and a commitment to the San Diego community. Our leaders are the driving force behind The Sharp Experience to ensure we are the best place to work, practice medicine and receive care. </p>
+
+                </div>
+                <img class="d-flex mr-3 img-thumbnail align-items-center" th:src="@{/images/yekatit-3.png}">
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 offset-1 col-sm-2">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a th:href="@{home}">Home</a></li>
+                    <li><a th:href="@{#}">About</a></li>
+                    <li><a th:href="@{contactus}">Contact</a></li>
+                    <li><a th:href="@{#}">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="col-7 col-sm-5">
+                <h5>Our Address</h5>
+                <address class="address">
+                    St George's Square<br>
+                    6 Kilo, Addis Ababa<br>
+                    Ethiopia<br>
+                    <i class="fa fa-phone fa-lg"></i>: +251910765922<br>
+                    <i class="fa fa-fax fa-lg"></i>: +25125310203<br>
+                    <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:contact@yekatit.net">contact@yekatit.net</a>
+                </address>
+            </div>
+            <div class="col-12 col-sm-4 align-self-center">
+                <div class="text-center">
+                    <a class="btn btn-social-icon btn-google" th:href="@{http://google.com/+}"><i class="fa fa-google-plus fg-lg"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" th:href="@{http://www.facebook.com/profile.php?id=}"><i class="fa fa-facebook fg-lg"></i></a>
+                    <a class="btn btn-social-icon btn-linkedin" th:href="@{http://www.linkedin.com/in/}"><i class="fa fa-linkedin fg-lg"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" th:href="@{http://twitter.com/}"><i class="fa fa-twitter fg-lg"></i></a>
+                    <a class="btn btn-social-icon btn-google" th:href="@{http://youtube.com/}"><i class="fa fa-youtube fg-lg"></i></a>
+                    <a class="btn btn-social-icon" th:href="@{mailto:}"><i class="fa fa-envelope-o fg-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <p>Copyright © 2018 Yekatit Referral Hospital</p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<script th:src="@{/js/jquery.slim.min.js}"></script>
+<script th:src="@{/js/popper.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/scripts.js}"></script>
+</body>
+</html>
